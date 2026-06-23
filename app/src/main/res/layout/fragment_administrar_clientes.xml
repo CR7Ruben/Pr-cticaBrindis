@@ -184,7 +184,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:hint="Fecha de nacimiento"
-                        app:startIconDrawable="@drawable/ic_lock"                        app:startIconTint="#6366F1"
+                        app:startIconDrawable="@drawable/ic_lock"
+                        app:startIconTint="#6366F1"
                         app:boxStrokeColor="#6366F1"
                         app:hintTextColor="#6366F1"
                         app:boxBackgroundColor="#232636"
@@ -214,56 +215,48 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:orientation="horizontal">
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnNuevo"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
                         android:layout_width="0dp"
-                        android:layout_height="44dp"
+                        android:layout_height="48dp"
                         android:layout_weight="1"
-                        android:layout_marginEnd="8dp"
+                        android:layout_marginEnd="6dp"
                         android:text="Nuevo"
-                        android:textColor="#A5A8C8"
-                        android:textSize="13sp"
-                        app:backgroundTint="#232636"
-                        app:strokeColor="#2E3149"
-                        app:strokeWidth="1dp"
-                        app:cornerRadius="10dp"
+                        android:textColor="#60A5FA"
                         app:icon="@drawable/ic_add"
-                        app:iconTint="#A5A8C8"
-                        app:iconSize="16dp" />
+                        app:iconTint="#60A5FA"
+                        app:strokeColor="#60A5FA"
+                        app:cornerRadius="12dp" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnGuardar"
                         android:layout_width="0dp"
-                        android:layout_height="44dp"
+                        android:layout_height="48dp"
                         android:layout_weight="1"
+                        android:layout_marginHorizontal="6dp"
                         android:text="Guardar"
-                        android:textColor="#FFFFFF"
-                        android:textSize="13sp"
-                        app:backgroundTint="#6366F1"
-                        app:cornerRadius="10dp"
                         app:icon="@drawable/ic_save"
-                        app:iconTint="#FFFFFF"
-                        app:iconSize="16dp" />
-                </LinearLayout>
+                        app:backgroundTint="#6366F1"
+                        app:cornerRadius="12dp"/>
 
-                <!-- Botón Eliminar -->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnEliminar"
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Eliminar cliente"
-                    android:textColor="#F87171"
-                    android:textSize="13sp"
-                    app:backgroundTint="#2D1A1A"
-                    app:strokeColor="#5C2C2C"
-                    app:strokeWidth="1dp"
-                    app:cornerRadius="10dp"
-                    app:icon="@drawable/ic_delete"
-                    app:iconTint="#F87171"
-                    app:iconSize="16dp" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEliminar"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="Eliminar"
+                        android:textColor="#F87171"
+                        app:icon="@drawable/ic_delete"
+                        app:strokeColor="#F87171"
+                        app:iconTint="#F87171"
+                        app:cornerRadius="12dp" />
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
