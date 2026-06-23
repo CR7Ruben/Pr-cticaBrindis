@@ -91,10 +91,13 @@
                         android:layout_weight="1"
                         android:layout_marginEnd="10dp"
                         android:hint="Clave"
+                        app:startIconDrawable="@drawable/ic_key"
+                        app:startIconTint="#6366F1"
                         app:boxStrokeColor="#6366F1"
                         app:hintTextColor="#6366F1"
                         app:boxBackgroundColor="#232636"
                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etClave"
                             android:layout_width="match_parent"
@@ -164,10 +167,13 @@
                         android:layout_weight="1"
                         android:layout_marginEnd="10dp"
                         android:hint="Edad"
+                        app:startIconDrawable="@drawable/ic_cake"
+                        app:startIconTint="#6366F1"
                         app:boxStrokeColor="#6366F1"
                         app:hintTextColor="#6366F1"
                         app:boxBackgroundColor="#232636"
                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etEdad"
                             android:layout_width="match_parent"
@@ -226,22 +232,29 @@
                         android:layout_weight="1"
                         android:layout_marginEnd="6dp"
                         android:text="Nuevo"
-                        android:textColor="#60A5FA"
+                        android:textColor="#FFFF"
+                        android:gravity="center"
+                        android:paddingVertical="0dp"
                         app:icon="@drawable/ic_add"
-                        app:iconTint="#60A5FA"
-                        app:strokeColor="#60A5FA"
+                        app:iconTint="#FFFF"
+                        app:strokeColor="#FFFF"
                         app:cornerRadius="12dp" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnGuardar"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
                         android:layout_width="0dp"
                         android:layout_height="48dp"
-                        android:layout_weight="1"
                         android:layout_marginHorizontal="6dp"
+                        android:layout_weight="1"
                         android:text="Guardar"
+                        android:textColor="#6366F1"
+                        android:gravity="center"
+                        android:paddingVertical="0dp"
                         app:icon="@drawable/ic_save"
-                        app:backgroundTint="#6366F1"
-                        app:cornerRadius="12dp"/>
+                        app:iconTint="#6366F1"
+                        app:strokeColor="#6366F1"
+                        app:cornerRadius="12dp" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnEliminar"
@@ -252,6 +265,8 @@
                         android:layout_marginStart="6dp"
                         android:text="Eliminar"
                         android:textColor="#F87171"
+                        android:gravity="center"
+                        android:paddingVertical="0dp"
                         app:icon="@drawable/ic_delete"
                         app:strokeColor="#F87171"
                         app:iconTint="#F87171"
@@ -276,48 +291,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <!-- Barra búsqueda -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:gravity="center_vertical">
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:hint="Buscar cliente..."
-                    app:startIconDrawable="@drawable/ic_search"
-                    app:startIconTint="#6366F1"
-                    app:boxStrokeColor="#6366F1"
-                    app:hintTextColor="#4A4D60"
-                    app:boxBackgroundColor="#232636"
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etBuscar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="#FFFFFF"
-                        android:padding="10dp"
-                        android:textSize="13sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <TextView
-                    android:id="@+id/tvConteo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_badge_outline"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="4dp"
-                    android:text="0 clientes"
-                    android:textColor="#6366F1"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
 
             <!-- Encabezado columnas -->
             <LinearLayout
